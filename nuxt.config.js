@@ -12,14 +12,15 @@ export default {
 
   modules: ['@nuxtjs/i18n'],
 
-  head() {
+  /*head() {
     return this.$nuxtI18nHead({
       addSeoAttributes: { canonicalQueries: ['myParam'] },
     });
-  },
+  },*/
 
   i18n: {
     baseUrl: 'http://localhost.com',
+    strategy: 'prefix',
     defaultLocale: 'en',
     locales: [
       { code: 'en', iso: 'en-US' },

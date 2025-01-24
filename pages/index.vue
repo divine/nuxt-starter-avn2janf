@@ -10,6 +10,13 @@
 
 <script>
 export default {
+  head() {
+    return this.$nuxtI18nHead({
+      addSeoAttributes: {
+        canonicalQueries: ['foo']
+      }
+    })
+  },
   data() {
     return {
       headTags: [],
